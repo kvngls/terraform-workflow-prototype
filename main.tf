@@ -2,7 +2,7 @@
 # For information about validating this Terraform code, see https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-build#format-and-validate-the-configuration
 
 provider "google" {
-  project     = "my-project-id"
+  project     = "eastern-flight-387717"
   region      = "us-central1"
 }
 
