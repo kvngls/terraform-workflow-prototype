@@ -12,9 +12,10 @@ permissions:
 jobs:
   apply:
     runs-on: ubuntu-latest
-    name: Apply terraform plan
+    name: Apply terraform
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
