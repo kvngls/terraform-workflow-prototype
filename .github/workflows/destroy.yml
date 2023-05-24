@@ -15,5 +15,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: terraform plan destroy
+        uses: dflook/terraform-plan@v1
+        with:
+          args: -destroy
+
       - name: terraform destroy
         uses: dflook/terraform-destroy@v1
