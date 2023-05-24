@@ -18,7 +18,7 @@ jobs:
       - name: terraform plan destroy
         uses: dflook/terraform-plan@v1
         with:
-          args: -destroy
+          destroy: true
 
       - name: terraform destroy
         uses: dflook/terraform-destroy@v1
