@@ -28,7 +28,7 @@ resource "google_compute_instance" "instance-1" {
     goog-ec-src = "vm_add-tf"
   }
 
-  machine_type = "e2-micro"
+  machine_type = "e2-small"
   name         = "instance-1"
 
   network_interface {
